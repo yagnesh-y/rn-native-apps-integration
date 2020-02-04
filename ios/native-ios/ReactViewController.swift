@@ -28,6 +28,9 @@ class ReactViewController: UIViewController {
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
         let initialProps:NSDictionary = ["screen": screen] // two
         
+        // because reactnavigation has it's own navigation bar
+        self.navigationController?.navigationBar.isHidden = true
+        
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation!,
             moduleName: "ScreenOne",
@@ -35,5 +38,10 @@ class ReactViewController: UIViewController {
             launchOptions: nil
         )
         view = rootView
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        // because reactnavigation has it's own navigation bar
+        self.navigationController?.navigationBar.isHidden = false
     }
 }
