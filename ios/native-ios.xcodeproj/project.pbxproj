@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		9EC5337023E950B600AFCE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5336E23E950B600AFCE49 /* Main.storyboard */; };
 		9EC5337223E950BD00AFCE49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5337123E950BD00AFCE49 /* Assets.xcassets */; };
 		9EC5337523E950BD00AFCE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5337323E950BD00AFCE49 /* LaunchScreen.storyboard */; };
+		9EEA832D23E97078007D2511 /* ReactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA832C23E97078007D2511 /* ReactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9EC5337123E950BD00AFCE49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EC5337423E950BD00AFCE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EC5337623E950BD00AFCE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEA832C23E97078007D2511 /* ReactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				9EC5337123E950BD00AFCE49 /* Assets.xcassets */,
 				9EC5337323E950BD00AFCE49 /* LaunchScreen.storyboard */,
 				9EC5337623E950BD00AFCE49 /* Info.plist */,
+				9EEA832C23E97078007D2511 /* ReactViewController.swift */,
 			);
 			path = "native-ios";
 			sourceTree = "<group>";
@@ -85,7 +88,6 @@
 				2FF5BFA7C4113B126056869C /* Pods-native-ios.debug.xcconfig */,
 				5CAFAA5907E1CDB774A8FB01 /* Pods-native-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,6 +208,7 @@
 			files = (
 				9EC5336D23E950B500AFCE49 /* ViewController.swift in Sources */,
 				9EC5336B23E950B500AFCE49 /* AppDelegate.swift in Sources */,
+				9EEA832D23E97078007D2511 /* ReactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
