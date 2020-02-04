@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		684EC1CD967805C093091FD0 /* Pods_native_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1D47150EFDB970C09E2356 /* Pods_native_ios.framework */; };
+		9E16A0CE23E99DF900E28A35 /* StartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16A0CD23E99DF900E28A35 /* StartActivity.swift */; };
+		9E16A0D123E99E8B00E28A35 /* StartActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16A0D023E99E8B00E28A35 /* StartActivity.m */; };
+		9E16A0D323E9A10A00E28A35 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16A0D223E9A10A00E28A35 /* ViewController2.swift */; };
 		9EC5336B23E950B500AFCE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5336A23E950B500AFCE49 /* AppDelegate.swift */; };
 		9EC5336D23E950B500AFCE49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5336C23E950B500AFCE49 /* ViewController.swift */; };
 		9EC5337023E950B600AFCE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5336E23E950B600AFCE49 /* Main.storyboard */; };
@@ -20,6 +23,10 @@
 		2FF5BFA7C4113B126056869C /* Pods-native-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native-ios.debug.xcconfig"; path = "Target Support Files/Pods-native-ios/Pods-native-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		5CAFAA5907E1CDB774A8FB01 /* Pods-native-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native-ios.release.xcconfig"; path = "Target Support Files/Pods-native-ios/Pods-native-ios.release.xcconfig"; sourceTree = "<group>"; };
 		6D1D47150EFDB970C09E2356 /* Pods_native_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_native_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E16A0CD23E99DF900E28A35 /* StartActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartActivity.swift; sourceTree = "<group>"; };
+		9E16A0CF23E99E8B00E28A35 /* native-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "native-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		9E16A0D023E99E8B00E28A35 /* StartActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartActivity.m; sourceTree = "<group>"; };
+		9E16A0D223E9A10A00E28A35 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		9EC5336723E950B500AFCE49 /* native-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC5336A23E950B500AFCE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC5336C23E950B500AFCE49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E16A0CC23E99D3100E28A35 /* react-native-modules */ = {
+			isa = PBXGroup;
+			children = (
+				9E16A0CD23E99DF900E28A35 /* StartActivity.swift */,
+				9E16A0D023E99E8B00E28A35 /* StartActivity.m */,
+				9E16A0CF23E99E8B00E28A35 /* native-ios-Bridging-Header.h */,
+			);
+			path = "react-native-modules";
+			sourceTree = "<group>";
+		};
 		9EC5335E23E950B500AFCE49 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +80,7 @@
 		9EC5336923E950B500AFCE49 /* native-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9E16A0CC23E99D3100E28A35 /* react-native-modules */,
 				9EC5336A23E950B500AFCE49 /* AppDelegate.swift */,
 				9EC5336C23E950B500AFCE49 /* ViewController.swift */,
 				9EC5336E23E950B600AFCE49 /* Main.storyboard */,
@@ -70,6 +88,7 @@
 				9EC5337323E950BD00AFCE49 /* LaunchScreen.storyboard */,
 				9EC5337623E950BD00AFCE49 /* Info.plist */,
 				9EEA832C23E97078007D2511 /* ReactViewController.swift */,
+				9E16A0D223E9A10A00E28A35 /* ViewController2.swift */,
 			);
 			path = "native-ios";
 			sourceTree = "<group>";
@@ -125,6 +144,7 @@
 				TargetAttributes = {
 					9EC5336623E950B500AFCE49 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -206,9 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E16A0D123E99E8B00E28A35 /* StartActivity.m in Sources */,
 				9EC5336D23E950B500AFCE49 /* ViewController.swift in Sources */,
+				9E16A0CE23E99DF900E28A35 /* StartActivity.swift in Sources */,
 				9EC5336B23E950B500AFCE49 /* AppDelegate.swift in Sources */,
 				9EEA832D23E97078007D2511 /* ReactViewController.swift in Sources */,
+				9E16A0D323E9A10A00E28A35 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +378,7 @@
 			baseConfigurationReference = 2FF5BFA7C4113B126056869C /* Pods-native-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDHWTS77CR;
 				INFOPLIST_FILE = "native-ios/Info.plist";
@@ -364,6 +388,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.native-android.native-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "native-ios/react-native-modules/native-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -374,6 +400,7 @@
 			baseConfigurationReference = 5CAFAA5907E1CDB774A8FB01 /* Pods-native-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RDHWTS77CR;
 				INFOPLIST_FILE = "native-ios/Info.plist";
@@ -383,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.native-android.native-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "native-ios/react-native-modules/native-ios-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
