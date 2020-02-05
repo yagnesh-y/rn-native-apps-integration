@@ -18,3 +18,5 @@
 /ios/native-ios.xcodeproj/xcuserdata/
 /ios/native-ios.xcworkspace/xcshareddata/
 /ios/build
+/ios/assets
+/ios/index.jsbundle
