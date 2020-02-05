@@ -25,12 +25,15 @@ class ReactViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // for dev
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
+        // for prod
+        // let jsCodeLocation = Bundle.main.url(forResource: "index", withExtension: "jsbundle")
         let initialProps:NSDictionary = ["screen": screen] // two
         
         // because reactnavigation has it's own navigation bar
         self.navigationController?.navigationBar.isHidden = true
-        
+
         let rootView = RCTRootView(
             bundleURL: jsCodeLocation!,
             moduleName: "ScreenOne",
