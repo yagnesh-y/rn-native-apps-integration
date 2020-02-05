@@ -18,21 +18,12 @@ Comment out 'NSAppTransportSecurity' from info.plist
 
 6. Product -> Build
 
-7. .app file can be found at ~/Library/Developer/Xcode/DerivedData/<app name>/Build/Products/Release-iphoneos/<appname>
+7. .app file can be found at ~/Library/Developer/Xcode/DerivedData/<app name>/Build/Products/Release-iphoneos/<appname> You can use this file to create an ipa file. OR FOLLOW STEP 8 through xCode.
 
-8. Create .ipa
+8. Follow the same steps as you would usually do for regular ios app.
 
-   - Create folder Payload.
-   - Paste .app file into Payload folder.
-   - Compress the Payload folder.
-   - Change the name you want and put extension as .ipa
-
-     mkdir Payload
-     cd Payload
-     ln -s ../Runner.app
-     cd ..
-     zip -r app.ipa Payload
-
-9. Upload the .ipa file to app center.
-
-10. Done!
+- Select proper provisioning/distribution profile in xcode.
+- Select Generic Device in xcode.
+- Product -> Archive
+- Product -> Distribute
+  You can even create the .ipa file. Through Archive -> Distribute -> Distribute for development. Upload this ipa file to appcenter.
