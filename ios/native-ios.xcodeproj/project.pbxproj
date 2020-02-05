@@ -11,6 +11,7 @@
 		9E16A0CE23E99DF900E28A35 /* StartActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16A0CD23E99DF900E28A35 /* StartActivity.swift */; };
 		9E16A0D123E99E8B00E28A35 /* StartActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E16A0D023E99E8B00E28A35 /* StartActivity.m */; };
 		9E16A0D323E9A10A00E28A35 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16A0D223E9A10A00E28A35 /* ViewController2.swift */; };
+		9E16A0D523EAA44A00E28A35 /* index.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9E16A0D423EAA44900E28A35 /* index.jsbundle */; };
 		9EC5336B23E950B500AFCE49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5336A23E950B500AFCE49 /* AppDelegate.swift */; };
 		9EC5336D23E950B500AFCE49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC5336C23E950B500AFCE49 /* ViewController.swift */; };
 		9EC5337023E950B600AFCE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EC5336E23E950B600AFCE49 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		9E16A0CF23E99E8B00E28A35 /* native-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "native-ios-Bridging-Header.h"; sourceTree = "<group>"; };
 		9E16A0D023E99E8B00E28A35 /* StartActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartActivity.m; sourceTree = "<group>"; };
 		9E16A0D223E9A10A00E28A35 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		9E16A0D423EAA44900E28A35 /* index.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; path = index.jsbundle; sourceTree = "<group>"; };
 		9EC5336723E950B500AFCE49 /* native-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EC5336A23E950B500AFCE49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EC5336C23E950B500AFCE49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		9EC5335E23E950B500AFCE49 = {
 			isa = PBXGroup;
 			children = (
+				9E16A0D423EAA44900E28A35 /* index.jsbundle */,
 				9EC5336923E950B500AFCE49 /* native-ios */,
 				9EC5336823E950B500AFCE49 /* Products */,
 				FD700EA3782223ABFBBE686A /* Pods */,
@@ -171,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E16A0D523EAA44A00E28A35 /* index.jsbundle in Resources */,
 				9EC5337523E950BD00AFCE49 /* LaunchScreen.storyboard in Resources */,
 				9EC5337223E950BD00AFCE49 /* Assets.xcassets in Resources */,
 				9EC5337023E950B600AFCE49 /* Main.storyboard in Resources */,
