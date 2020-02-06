@@ -1,6 +1,6 @@
 "use strict";
 
-import React from "react";
+import React, { useEffect } from "react";
 import {
   AppRegistry,
   StyleSheet,
@@ -8,20 +8,39 @@ import {
   View,
   TouchableOpacity,
   Linking,
-  NativeModules
+  NativeModules,
+  NativeEventEmitter
 } from "react-native";
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 // import "react-native-gesture-handler";
 
 const ScreenOne = props => {
+  useEffect(() => {
+    const eventEmitter = new NativeEventEmitter(NativeModules.StartActivity);
+    eventEmitter.addListener("bottomSheet", event => {
+      console.log(event);
+      if (event.bottomSheetState == "showAlert") {
+        alert(
+          "This is react native. Android's native told me to show this alert."
+        );
+      }
+    });
+  }, []);
+
   const handleScreeen = () => props.navigation.navigate("two");
 
   const handleNative = () => NativeModules.StartActivity.startAct("");
 
+  const showBottomSheet = () => NativeModules.StartActivity.showBottomSheet();
+
   return (
     <View style={styles.container}>
       <Text style={styles.screen}>Screen One</Text>
+      <TouchableOpacity onPress={showBottomSheet}>
+        <Text>Show bottom sheet</Text>
+      </TouchableOpacity>
+
       <TouchableOpacity onPress={handleScreeen}>
         <Text>Go to Screen 2</Text>
       </TouchableOpacity>

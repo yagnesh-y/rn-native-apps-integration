@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactRootView;
 import com.facebook.react.common.LifecycleState;
@@ -22,7 +24,7 @@ import com.facebook.react.bridge.ReadableMap;
 import java.util.HashMap;
 
 
-public class BaseReactActivity extends Activity implements DefaultHardwareBackBtnHandler  {
+public class BaseReactActivity extends AppCompatActivity implements DefaultHardwareBackBtnHandler  {
 
     private ReactRootView mReactRootView;
     protected static ReactInstanceManager sReactInstanceManager;

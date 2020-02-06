@@ -5,6 +5,8 @@ package com.example.native_android;
         import android.content.Intent;
         import android.util.SparseArray;
 
+        import androidx.appcompat.app.AppCompatActivity;
+
         import com.facebook.react.bridge.ActivityEventListener;
         import com.facebook.react.bridge.Arguments;
         import com.facebook.react.bridge.Promise;
@@ -63,6 +65,13 @@ public class StartActivityModule extends ReactContextBaseJavaModule implements A
         Intent intent = new Intent(action);
         intent.putExtras(Arguments.toBundle(data));
         activity.startActivity(intent);
+    }
+
+    @ReactMethod
+    public void showBottomSheet() {
+        AppCompatActivity activity = (AppCompatActivity) getReactApplicationContext().getCurrentActivity();
+        CustomBottomSheetDialog dialog = new CustomBottomSheetDialog(getReactApplicationContext());
+        dialog.show(activity.getSupportFragmentManager(), "Bottom Sheet");
     }
 
     @ReactMethod
