@@ -20,3 +20,6 @@
 /ios/build
 /ios/assets
 /ios/index.jsbundle
+
+/android/local.properties
+/android/.idea
