@@ -9,11 +9,13 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private static final int OVERLAY_PERMISSION_REQ_CODE = 1;
 
@@ -43,34 +45,5 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
-
-//        Button btReactView2 = (Button) findViewById(R.id.btReactView2);
-//        btReactView2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // go to react view
-//                Intent intent = ActivityTwo.createIntent(MainActivity.this);
-//                startActivity(intent);
-//            }
-//        });
-
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            if (!Settings.canDrawOverlays(this)) {
-//                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION,
-//                        Uri.parse("package:" + getPackageName()));
-//                startActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
-//            }
-//        }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        if (requestCode == OVERLAY_PERMISSION_REQ_CODE) {
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                if (!Settings.canDrawOverlays(this)) {
-//                    // SYSTEM_ALERT_WINDOW permission not granted...
-//                }
-//            }
-//        }
     }
 }

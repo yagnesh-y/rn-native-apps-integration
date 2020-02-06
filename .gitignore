@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 /node_modules
+/ios/Pods
+/ios/native-ios.xcworkspace/xcuserdata/
+/ios/native-ios.xcodeproj/xcuserdata/
+/ios/native-ios.xcworkspace/xcshareddata/
+/ios/build
+/ios/assets
+/ios/index.jsbundle
+
+/android/local.properties
+/android/.idea
